@@ -3,8 +3,12 @@ body {
 }
 .container {
     border: 6px solid black;
-  /*   display: flex; this will take the full width of the page */
-  display : inline-flex; /*this will take only enough space that will accommodate all its children */
+    display: flex; /* this will take the full width of the page */
+  /*display : inline-flex; this will take only enough space that will accommodate all its children */
+  /*flex-direction: row; set the axis to main i.e. from left to right */
+ /*  flex-direction: row-reverse; set the axis to main but from right to left */
+ flex-direction: column; /* set the axis to cross but from top to bottom */
+ /*flex-direction: column-reverse;  set the axis to cross but from bottom to top */
 }
 .flex-item {
     color: white;
