@@ -4,16 +4,14 @@ body {
 .container {
     border: 6px solid black;
     display: flex;
-    /*justify-content: flex-start;  start putting the elements to the start of the main axis*/
-    /*justify-content: flex-end; the flex item to be placed at the end of the main axis*/
-    /*justify-content: center;*/
-    /*justify-content: space-between; evenly distributes the extra space left in the container*/
-    
-    /*justify-content: space-around; sometimes we want the space before the first item and after the last item and this space will be allocated like if space between item1 and item2 is 40px then item1 will left 20px from beginning and last item will be placed 20px before the size of the container */
-     /*justify-content: space-evenly; Sabke bich me ab equal distance hoga*/
+    height:300px;
+   /* align-items:stretch; this is default value*/
+   /*align-items: flex-start; All the items are pushed to the cross start which is the starting point of the cross axis*/
+   /*align-items: flex-end;*/
+   /*align-items: flex-center;*/
+   align-items:baseline;
 
-     /*NOTE: justify-content deals with the main axis by default but if we fix the flex-direction to the column then it will deal with the verticle axis*/
-    
+
 
 
 
@@ -26,12 +24,15 @@ body {
 }
 .item-1 {
     background-color: #B4BF35;
+    padding-bottom: 3rem;
 }
 .item-2 {
     background-color: #B95F21;
+    padding-bottom: 5rem;
 }
 .item-3 {
     background-color: #1C4C56;
+    font-size: 3rem;
 }
 .item-4 {
     background-color: #CfB276;
