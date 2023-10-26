@@ -4,17 +4,19 @@ body {
 .container {
     border: 6px solid black;
     display: flex;
-    /* flex-direction: row; */
-    /* flex-wrap: no-wrap; */
+    /*justify-content: flex-start;  start putting the elements to the start of the main axis*/
+    /*justify-content: flex-end; the flex item to be placed at the end of the main axis*/
+    /*justify-content: center;*/
+    /*justify-content: space-between; evenly distributes the extra space left in the container*/
+    
+    /*justify-content: space-around; sometimes we want the space before the first item and after the last item and this space will be allocated like if space between item1 and item2 is 40px then item1 will left 20px from beginning and last item will be placed 20px before the size of the container */
+     /*justify-content: space-evenly; Sabke bich me ab equal distance hoga*/
+
+     /*NOTE: justify-content deals with the main axis by default but if we fix the flex-direction to the column then it will deal with the verticle axis*/
+    
 
 
-    /*flex-flow: row-reverse wrap;*/
-    flex-flow: column-reverse wrap-reverse;
-    height: 400px;
 
-    /* So flex-flow: <flex-direction> <flex-wrap>*/
-
-   
 }
 .flex-item {
     color: white;
