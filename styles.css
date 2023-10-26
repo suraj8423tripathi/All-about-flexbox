@@ -4,15 +4,17 @@ body {
 .container {
     border: 6px solid black;
     display: flex;
-   /* flex-wrap:nowrap; this is default value*/
-   /*flex-wrap:wrap;  If you start reducing the browser width because items are wrapped inside the container,the wrapping takes place as when needed if there is not enough space for just one item only that item will move into the next row*/
-    /*flex-wrap:wrap-reverse;   in place of going to below row in this case it will go to the above row*/
-    /*Important thing is that wrapping always happens from the last*/
+    /* flex-direction: row; */
+    /* flex-wrap: no-wrap; */
 
-    /*Vertical wrapping is also possible*/
-    flex-direction : column;
+
+    /*flex-flow: row-reverse wrap;*/
+    flex-flow: column-reverse wrap-reverse;
     height: 400px;
-    flex-wrap:wrap;
+
+    /* So flex-flow: <flex-direction> <flex-wrap>*/
+
+   
 }
 .flex-item {
     color: white;
